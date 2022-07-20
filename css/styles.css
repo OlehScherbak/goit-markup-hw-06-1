@@ -771,26 +771,17 @@ address {
 }
 
 .form-input-label {
-  position: relative;
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 4px;
   font-size: 12px;
   letter-spacing: 0.01em;
   color: var(--text-grey);
 }
 
-.form-input-label.comment {
-  margin-bottom: 20px;
-}
-
-.input-label {
-  display: block;
-  margin-bottom: 4px;
-}
-
-/* .input-wrapper {
+.input-wrapper {
   position: relative;
-} */
+  margin-bottom: 10px;
+}
 
 .form-input {
   display: block;
@@ -802,25 +793,13 @@ address {
   transition: border-color var(--trans-duration) var(--timing-function);
 }
 
-.form-input:hover,
 .form-input:focus {
   border: 1px solid rgba(33, 150, 243, 1);
   outline: 0;
 }
 
-.form-input:hover + .input-icon,
 .form-input:focus + .input-icon {
   fill: var(--axcent);
-}
-
-.input-icon {
-  position: absolute;
-  top: 50%;
-  left: 12px;
-  width: 18px;
-  height: 18px;
-  transform: translateY(-50%+8px);
-  transition: fill var(--trans-duration) var(--timing-function);
 }
 
 .textarea-comment {
@@ -830,6 +809,17 @@ address {
   padding: 12px 16px;
   font-size: 12px;
   letter-spacing: 0.01em;
+  margin-bottom: 20px;
+}
+
+.input-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  width: 18px;
+  height: 18px;
+  transform: translateY(-50%);
+  transition: fill var(--trans-duration) var(--timing-function);
 }
 
 .input-checkbox {

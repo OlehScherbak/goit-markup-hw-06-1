@@ -481,7 +481,7 @@
         <form class="callback-form">
           <h2 class="callback-form-title">Оставьте свои данные, мы вам перезвоним</h2>
 
-          <label class="form-input-label" for="name">
+          <!-- <label class="form-input-label" for="name">
             <span class="input-label">Имя</span>
 
             <input class="form-input" type="text" name="name" id="name" />
@@ -514,7 +514,39 @@
               id="comment"
               placeholder="Введите текст"
             ></textarea>
-          </label>
+          </label> -->
+
+          <label class="form-input-label" for="name">Имя</label>
+          <div class="input-wrapper">
+            <input class="form-input" type="text" name="name" id="name" />
+            <svg class="input-icon" aria-hidden="true">
+              <use href="./images/icons.svg#icon-person"></use>
+            </svg>
+          </div>
+
+          <label class="form-input-label" for="tel">Телефон</label>
+          <div class="input-wrapper">
+            <input class="form-input" type="tel" name="tel" id="tel" />
+            <svg class="input-icon" aria-hidden="true">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+          </div>
+
+          <label class="form-input-label" for="email">Почта</label>
+          <div class="input-wrapper">
+            <input class="form-input" type="email" name="email" id="email" />
+            <svg class="input-icon" aria-hidden="true">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+          </div>
+
+          <label class="form-input-label" for="comment">Комментарий</label>
+          <textarea
+            class="form-input textarea-comment"
+            name="comment"
+            id="comment"
+            placeholder="Введите текст"
+          ></textarea>
 
           <label class="user-consent-label">
             <input class="input-checkbox" type="checkbox" name="user-consent" />
