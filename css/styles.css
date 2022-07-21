@@ -850,17 +850,16 @@ address {
   width: 16px;
   height: 15px;
   margin-right: 7px;
-  background-origin: border-box;
   border-radius: 2px;
   border: 2px solid #212121;
-  transition: background-color var(--trans-duration) var(--timing-function),
-    border-color var(--trans-duration) var(--timing-function);
+  fill: transparent;
+  transition: background-color var(--trans-duration) var(--timing-function);
 }
 
 .input-checkbox:checked + .icon-check {
   background-color: var(--axcent);
-  background-image: url(../images/icon-check.svg);
-  border-color: var(--axcent);
+  fill: var(--text-white);
+  border: 0px;
 }
 
 .agreement-link {
@@ -889,5 +888,4 @@ address {
 .callback-submit-button:hover,
 .callback-submit-button:focus {
   background: #188ce8;
-  outline: 0;
 }
